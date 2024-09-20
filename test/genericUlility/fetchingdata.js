@@ -12,7 +12,7 @@ class exceltestdata {
     //     const sheet=book.getWorksheet("Sheet1")
     //     //we have identified the sheet now we have to get data from that..
     //     //get data by the cell and row number
-    //     //ehatever im fetching it sld be in string only so give tostring()
+    //     //whatever im fetching it sld be in string only so give tostring()
     //     let data=sheet.getRow(1).getCell(1).toString()
     //     //console.log(data);
     //     return data
@@ -22,7 +22,7 @@ class exceltestdata {
         //to create a page in excel
         const book = new excel.Workbook()
         //since book is storing excelpage give .xlsx extention 
-        //and allow to read that file by ur testsvcript
+        //and allow to read that file by ur testscript
         await book.xlsx.readFile(filepath)
         //caccess the sheet which we already created-by passing ur sheet name
         const sheet = await book.getWorksheet(sheetname)
